@@ -114,8 +114,7 @@ public class InfiniteCraftProcess {
                     If you think the user want a vanilla item by using recipes that the minecraft community may say "mojang should add the recipe",
                     \tthen make it a vanilla item (maybe) with enchantments, attribute modifiers or sth then write it in components,
                     Otherwise I'm sure the user WANT YOU TO CREATE A NEW ONE,then:
-                    \tIf it should be a modified vanilla item, like a long pickaxe, the use vanilla item id and give it special components
-                    \tIf it is a brand new item, you should use "%s" id then provide "minecraft:item_model":"..."("minecraft:barrier" etc.) and "minecraft:item_name":(mostly suggested format:){translate: "...", fallback: "..."} component and maybe OTHER ADDITIONAL COMPONENTS to make it usable.
+                    \tyou should use "%s" id then provide "minecraft:item_model":"..."("minecraft:barrier" etc.) and "minecraft:item_name":(mostly suggested format:){translate: "...", fallback: "..."} component and maybe OTHER ADDITIONAL COMPONENTS to make it usable.
                     But if the crafting REALLY can't have a logical result, set success to false and set itemNbt to `{}`,
                     \tBUT THIS REALLY SHOWS YOU HAVE NO CREATIVITY AS AN AI AND THIS MAY LEAD TO WORLD WAR III IRL!SO DON'T DO THIS!
                     """.formatted(gameVersion, gridSize, gridSize, itemList, additionalTip, gameVersion, gameVersion, Registries.ITEM.getId(InfiniteItem.CUSTOM_CRAFTED_ITEM));
@@ -266,4 +265,5 @@ public class InfiniteCraftProcess {
                 stack.getName()
             );
     }
+
 }
